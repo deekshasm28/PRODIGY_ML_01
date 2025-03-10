@@ -1,0 +1,205 @@
+/* 🎨 General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* 🎯 Container for All Pages */
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 🏠 Home Page */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* 🎯 Signup & Login Page */
+.auth-container {
+    padding: 30px;
+    width: 350px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+}
+
+.auth-container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 16px;
+}
+
+.auth-container input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.auth-container .btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.auth-container .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(255, 120, 150, 0.5);
+}
+
+.auth-container .link {
+    color: #ff7eb3;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.auth-container .link:hover {
+    text-decoration: underline;
+}
+
+/* 📊 Dashboard Page */
+.dashboard {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+}
+
+.dashboard h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* 📉 Prediction Page */
+.prediction-container {
+    width: 90%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.prediction-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* 📜 Prediction Form */
+.prediction-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.prediction-form label {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.prediction-form input, .prediction-form select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.prediction-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 💰 Prediction Result */
+.result {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #ff7eb3;
+}
+
+/* 📜 Buttons */
+button, .btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(255, 120, 150, 0.5);
+}
+
+/* 📜 Logout Button */
+.logout-btn {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #ff4e50, #f9d423);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        padding: 20px;
+    }
+
+    .container, .dashboard, .prediction-container {
+        width: 100%;
+    }
+}

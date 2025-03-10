@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to House Price Prediction</h1>
+        <div class="buttons">
+            <a href="{{ url_for('signup') }}">Sign Up</a>
+            <a href="{{ url_for('login') }}">Login</a>
+        </div>
+    </div>
+</body>
+</html>
